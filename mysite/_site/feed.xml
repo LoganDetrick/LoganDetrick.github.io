@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-13T16:39:23-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Creating the Website</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Creating-Website.html" rel="alternate" type="text/html" title="Creating the Website" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Creating-Website</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Creating-Website.html"><![CDATA[<p>creating the website</p>
+<ul>
+  <li>jekyll</li>
+  <li>github</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[creating the website jekyll github]]></summary></entry><entry><title type="html">Creating the Second Version</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Second-Version.html" rel="alternate" type="text/html" title="Creating the Second Version" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Second-Version</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Second-Version.html"><![CDATA[<p>Second Version</p>
+<ul>
+  <li>starting near from scratch</li>
+  <li>improvement
+    <ul>
+      <li>change in how storing planets
+        <ul>
+          <li>2-d array of doubles</li>
+          <li>explain why chose to do this</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>issues
+    <ul>
+      <li>planets going offscreen
+        <ul>
+          <li>different solution (dragging field of view)</li>
+          <li>still did looping</li>
+        </ul>
+      </li>
+      <li>planet collisions
+        <ul>
+          <li>talk about this in the next post</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Second Version starting near from scratch improvement change in how storing planets 2-d array of doubles explain why chose to do this issues planets going offscreen different solution (dragging field of view) still did looping planet collisions talk about this in the next post]]></summary></entry><entry><title type="html">Adding Collisions</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Collisions.html" rel="alternate" type="text/html" title="Adding Collisions" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Collisions</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Collisions.html"><![CDATA[<p>in this post:</p>
+<ul>
+  <li>Why I chose to add collisions</li>
+  <li>implementing radius
+    <ul>
+      <li>simple, except for question of: “should the radius of a planet be random, or should it be based off of the planet’s mass, for example utilizing density”</li>
+    </ul>
+  </li>
+  <li>initial solution
+    <ul>
+      <li>collision-like force that amplifies/appears when the planets would be colliding</li>
+    </ul>
+  </li>
+  <li>the choice between types of collisions (elastic/non-elastic)</li>
+  <li>calculating the collisions
+    <ul>
+      <li>kinetic energy</li>
+      <li>conservation of momentum</li>
+      <li></li>
+    </ul>
+  </li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[in this post: Why I chose to add collisions implementing radius simple, except for question of: “should the radius of a planet be random, or should it be based off of the planet’s mass, for example utilizing density” initial solution collision-like force that amplifies/appears when the planets would be colliding the choice between types of collisions (elastic/non-elastic) calculating the collisions kinetic energy conservation of momentum]]></summary></entry><entry><title type="html">First Version</title><link href="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html" rel="alternate" type="text/html" title="First Version" /><published>2022-03-11T12:24:11-08:00</published><updated>2022-03-11T12:24:11-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/11/First-Version</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html"><![CDATA[<h1 id="inspiration">Inspiration</h1>
+
+<p>First version:</p>
+<ul>
+  <li>looping</li>
+  <li>perspective</li>
+  <li>center of mass</li>
+  <li>planets as points</li>
+  <li>physics</li>
+  <li>different speeds of the simulation</li>
+  <li>manually inputting planet data</li>
+  <li>storing planets as class, array of planets to store them</li>
+  <li>packages using
+    <ul>
+      <li>using java swing/awt</li>
+    </ul>
+  </li>
+  <li>method of remembering where planets were in the past
+    <ul>
+      <li>animate loop, call paintComponent rather than repaint in order to not paint backround/erase what was previously displayed</li>
+    </ul>
+  </li>
+  <li>issues
+    <ul>
+      <li>planet collisions</li>
+      <li>planets going offscreen
+        <ul>
+          <li>solution - looping
+            <ul>
+              <li>consequences of having looping</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>want to have a record of the planet’s past movements
+        <ul>
+          <li>search for possible solutions</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Hello, here is some code in Java:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"> <span class="n">repaint</span><span class="o">();</span> </code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="c1">//create the trace (don't redraw the background)</span>
+<span class="nc">Graphics</span> <span class="n">g</span> <span class="o">=</span> <span class="n">getGraphics</span><span class="o">();</span>
+
+<span class="n">update</span><span class="o">(</span><span class="n">g</span><span class="o">);</span><span class="c1">// overrided method, see below</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="nc">Graphics</span> <span class="n">g</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">paintComponent</span><span class="o">(</span><span class="n">g</span><span class="o">);</span> <span class="c1">//method to paint on screen</span>
+<span class="o">}</span></code></pre></figure>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Inspiration]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-03-05T17:11:59-08:00</published><updated>2022-03-05T17:11:59-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
