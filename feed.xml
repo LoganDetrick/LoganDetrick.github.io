@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-03-24T18:30:00-07:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Creating the Website</title><link href="/jekyll/update/2022/03/12/Creating-Website.html" rel="alternate" type="text/html" title="Creating the Website" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>/jekyll/update/2022/03/12/Creating-Website</id><content type="html" xml:base="/jekyll/update/2022/03/12/Creating-Website.html"><![CDATA[<p>creating the website</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-25T13:10:08-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Creating the Website</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Creating-Website.html" rel="alternate" type="text/html" title="Creating the Website" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Creating-Website</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Creating-Website.html"><![CDATA[<p>creating the website</p>
 <ul>
   <li>jekyll</li>
   <li>github</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[creating the website jekyll github]]></summary></entry><entry><title type="html">Creating the Second Version</title><link href="/jekyll/update/2022/03/12/Second-Version.html" rel="alternate" type="text/html" title="Creating the Second Version" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>/jekyll/update/2022/03/12/Second-Version</id><content type="html" xml:base="/jekyll/update/2022/03/12/Second-Version.html"><![CDATA[<p>Second Version</p>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[creating the website jekyll github]]></summary></entry><entry><title type="html">Creating the Second Version</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Second-Version.html" rel="alternate" type="text/html" title="Creating the Second Version" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Second-Version</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Second-Version.html"><![CDATA[<p>Second Version</p>
 <ul>
   <li>starting near from scratch</li>
   <li>improvement
@@ -30,7 +30,7 @@
       </li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Second Version starting near from scratch improvement change in how storing planets 2-d array of doubles explain why chose to do this issues planets going offscreen different solution (dragging field of view) still did looping planet collisions talk about this in the next post]]></summary></entry><entry><title type="html">Adding Collisions</title><link href="/jekyll/update/2022/03/12/Collisions.html" rel="alternate" type="text/html" title="Adding Collisions" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>/jekyll/update/2022/03/12/Collisions</id><content type="html" xml:base="/jekyll/update/2022/03/12/Collisions.html"><![CDATA[<p>in this post:</p>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Second Version starting near from scratch improvement change in how storing planets 2-d array of doubles explain why chose to do this issues planets going offscreen different solution (dragging field of view) still did looping planet collisions talk about this in the next post]]></summary></entry><entry><title type="html">Adding Collisions</title><link href="http://localhost:4000/jekyll/update/2022/03/12/Collisions.html" rel="alternate" type="text/html" title="Adding Collisions" /><published>2022-03-12T12:00:00-08:00</published><updated>2022-03-12T12:00:00-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/12/Collisions</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/12/Collisions.html"><![CDATA[<p>in this post:</p>
 <ul>
   <li>Why I chose to add collisions</li>
   <li>implementing radius
@@ -51,7 +51,63 @@
       <li></li>
     </ul>
   </li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[in this post: Why I chose to add collisions implementing radius simple, except for question of: “should the radius of a planet be random, or should it be based off of the planet’s mass, for example utilizing density” initial solution collision-like force that amplifies/appears when the planets would be colliding the choice between types of collisions (elastic/non-elastic) calculating the collisions kinetic energy conservation of momentum]]></summary></entry><entry><title type="html">First Version</title><link href="/jekyll/update/2022/03/11/First-Version.html" rel="alternate" type="text/html" title="First Version" /><published>2022-03-11T12:24:11-08:00</published><updated>2022-03-11T12:24:11-08:00</updated><id>/jekyll/update/2022/03/11/First-Version</id><content type="html" xml:base="/jekyll/update/2022/03/11/First-Version.html"><![CDATA[<h1 id="inspiration">Inspiration</h1>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[in this post: Why I chose to add collisions implementing radius simple, except for question of: “should the radius of a planet be random, or should it be based off of the planet’s mass, for example utilizing density” initial solution collision-like force that amplifies/appears when the planets would be colliding the choice between types of collisions (elastic/non-elastic) calculating the collisions kinetic energy conservation of momentum]]></summary></entry><entry><title type="html">First Version</title><link href="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html" rel="alternate" type="text/html" title="First Version" /><published>2022-03-11T12:24:11-08:00</published><updated>2022-03-11T12:24:11-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/11/First-Version</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html"><![CDATA[<h1 id="inspiration">Inspiration</h1>
+
+<h1 id="a-look-at-the-physics">A Look at the Physics</h1>
+
+<p>When beginning this project, I knew that I would have to have a grasp on physics in order to complete it. 
+Luckily, I was learning Physics at the time and from that class, I knew the key formula that would dictate the physics of my simulation would be Newton’s Law of Universal Gravitation.</p>
+
+\[\|F_{gravity}\| = G\frac{m_1m_2}{r^2}\]
+
+<p>Above is Newton’s Law of Gravitational Attraction, where:</p>
+<ul>
+  <li>\(\|F_{gravity}\| =\) The magnitude of the force of gravity between the two objects</li>
+  <li>\(G =\) The universal gravitational constant</li>
+  <li>\(m_1 =\) The mass of the first object</li>
+  <li>\(m_2 =\) The mass of the second object</li>
+  <li>\(r =\) The distance between the two objects</li>
+</ul>
+
+<p>In practice, the program does not keep track of the distances between each object, instead remembering the location of each object, so I needed a formula to relate distance and location. 
+Luckily, the well known pythagorean formula can help with this, which states that:</p>
+
+\[d^2 = (x_2-x_1)^2+(y_2-y_1)^2\]
+
+<p>I can then substitute this formula into my gravitational formula to create:</p>
+
+\[\|F_{gravity}\| = G\frac{m_1m_2}{(x_2-x_1)^2+(y_2-y_1)^2}\]
+
+<p>However, this only gives me the magnitude of the force between the two objects, so to account for this, 
+I used simple trigonometry in order to get the magnitude of the force in the x and y directions.</p>
+
+\[F_{gravity,x} = \|F_{gravity}\| \cdot \cos(\theta)\]
+
+\[F_{gravity,y} = \|F_{gravity}\| \cdot \sin(\theta)\]
+
+<p>\(\theta\), in this situation, is the angle between the positive x-axis and the line created between the two objects. 
+In my code, I was able to find the angle very easily using the method below, which gave me \(\theta\) when I entered the relative coordinates of the planets:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"> <span class="nc">Math</span><span class="o">.</span><span class="na">atan2</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span> </code></pre></figure>
+
+<p>In order</p>
+
+<p>Newton’s Second Law states that:</p>
+
+\[F_{net,x} = ma_x \Rightarrow a_x = \frac{F_{net,x}}{m}\]
+
+\[F_{net,x} = \sum F_{gravity,x}  = \sum \left[ G\frac{mm_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]\]
+
+\[a_x = \frac{\sum \left[ G\frac{mm_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]}{m_1}  = G \cdot \sum \left[ \frac{m_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]\]
+
+<p>The same formula</p>
+
+<p>As I wanted the simulation to run on a relatively small scale, around 800 by 600 units, 
+I decided the change the universal gravitational constant, \(G\), which is normally \(6.67\times10^{-11} \frac{m^3}{kg s^2}\), 
+to a number which would scale the forces to fit my simulation. 
+I ended up choosing \(G\) to be \(100\), as it appeared to give results which were more easily understandable.</p>
+
+<h1 id="creating-the-code">Creating the Code</h1>
 
 <p>First version:</p>
 <ul>
@@ -105,7 +161,9 @@
 
 <figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="nc">Graphics</span> <span class="n">g</span><span class="o">)</span> <span class="o">{</span>
 	<span class="n">paintComponent</span><span class="o">(</span><span class="n">g</span><span class="o">);</span> <span class="c1">//method to paint on screen</span>
-<span class="o">}</span></code></pre></figure>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Inspiration]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2022/03/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-03-05T17:11:59-08:00</published><updated>2022-03-05T17:11:59-08:00</updated><id>/jekyll/update/2022/03/05/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2022/03/05/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<span class="o">}</span></code></pre></figure>
+
+<p>4 degrees \(4^\circ\)</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Inspiration]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-03-05T17:11:59-08:00</published><updated>2022-03-05T17:11:59-08:00</updated><id>http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/05/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -120,5 +178,11 @@
 <span class="k">end</span>
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+\[y = mx + b\]
+
+\[\left. \int_3^x \sqrt{\frac{c-2}{3}} \, dc \right \vert_{x=5}\]
+
+\[\LaTeX\]
 
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>

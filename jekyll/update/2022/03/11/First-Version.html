@@ -9,17 +9,21 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Inspiration" />
 <meta property="og:description" content="Inspiration" />
-<link rel="canonical" href="/jekyll/update/2022/03/11/First-Version.html" />
-<meta property="og:url" content="/jekyll/update/2022/03/11/First-Version.html" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2022/03/11/First-Version.html" />
 <meta property="og:site_name" content="Your awesome title" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-03-11T12:24:11-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="First Version" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-11T12:24:11-08:00","datePublished":"2022-03-11T12:24:11-08:00","description":"Inspiration","headline":"First Version","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2022/03/11/First-Version.html"},"url":"/jekyll/update/2022/03/11/First-Version.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-03-11T12:24:11-08:00","datePublished":"2022-03-11T12:24:11-08:00","description":"Inspiration","headline":"First Version","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2022/03/11/First-Version.html"},"url":"http://localhost:4000/jekyll/update/2022/03/11/First-Version.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Your awesome title" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Your awesome title</a><nav class="site-nav">
@@ -48,6 +52,62 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="inspiration">Inspiration</h1>
+
+<h1 id="a-look-at-the-physics">A Look at the Physics</h1>
+
+<p>When beginning this project, I knew that I would have to have a grasp on physics in order to complete it. 
+Luckily, I was learning Physics at the time and from that class, I knew the key formula that would dictate the physics of my simulation would be Newton’s Law of Universal Gravitation.</p>
+
+\[\|F_{gravity}\| = G\frac{m_1m_2}{r^2}\]
+
+<p>Above is Newton’s Law of Gravitational Attraction, where:</p>
+<ul>
+  <li>\(\|F_{gravity}\| =\) The magnitude of the force of gravity between the two objects</li>
+  <li>\(G =\) The universal gravitational constant</li>
+  <li>\(m_1 =\) The mass of the first object</li>
+  <li>\(m_2 =\) The mass of the second object</li>
+  <li>\(r =\) The distance between the two objects</li>
+</ul>
+
+<p>In practice, the program does not keep track of the distances between each object, instead remembering the location of each object, so I needed a formula to relate distance and location. 
+Luckily, the well known pythagorean formula can help with this, which states that:</p>
+
+\[d^2 = (x_2-x_1)^2+(y_2-y_1)^2\]
+
+<p>I can then substitute this formula into my gravitational formula to create:</p>
+
+\[\|F_{gravity}\| = G\frac{m_1m_2}{(x_2-x_1)^2+(y_2-y_1)^2}\]
+
+<p>However, this only gives me the magnitude of the force between the two objects, so to account for this, 
+I used simple trigonometry in order to get the magnitude of the force in the x and y directions.</p>
+
+\[F_{gravity,x} = \|F_{gravity}\| \cdot \cos(\theta)\]
+
+\[F_{gravity,y} = \|F_{gravity}\| \cdot \sin(\theta)\]
+
+<p>\(\theta\), in this situation, is the angle between the positive x-axis and the line created between the two objects. 
+In my code, I was able to find the angle very easily using the method below, which gave me \(\theta\) when I entered the relative coordinates of the planets:</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"> <span class="nc">Math</span><span class="o">.</span><span class="na">atan2</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span> </code></pre></figure>
+
+<p>In order</p>
+
+<p>Newton’s Second Law states that:</p>
+
+\[F_{net,x} = ma_x \Rightarrow a_x = \frac{F_{net,x}}{m}\]
+
+\[F_{net,x} = \sum F_{gravity,x}  = \sum \left[ G\frac{mm_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]\]
+
+\[a_x = \frac{\sum \left[ G\frac{mm_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]}{m_1}  = G \cdot \sum \left[ \frac{m_1}{(x_2-x_1)^2+(y_2-y_1)^2} \cdot \cos(\theta) \right]\]
+
+<p>The same formula</p>
+
+<p>As I wanted the simulation to run on a relatively small scale, around 800 by 600 units, 
+I decided the change the universal gravitational constant, \(G\), which is normally \(6.67\times10^{-11} \frac{m^3}{kg s^2}\), 
+to a number which would scale the forces to fit my simulation. 
+I ended up choosing \(G\) to be \(100\), as it appeared to give results which were more easily understandable.</p>
+
+<h1 id="creating-the-code">Creating the Code</h1>
 
 <p>First version:</p>
 <ul>
@@ -102,6 +162,9 @@
 <figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">update</span><span class="o">(</span><span class="nc">Graphics</span> <span class="n">g</span><span class="o">)</span> <span class="o">{</span>
 	<span class="n">paintComponent</span><span class="o">(</span><span class="n">g</span><span class="o">);</span> <span class="c1">//method to paint on screen</span>
 <span class="o">}</span></code></pre></figure>
+
+<p>4 degrees \(4^\circ\)</p>
+
 
   </div><a class="u-url" href="/jekyll/update/2022/03/11/First-Version.html" hidden></a>
 </article>
